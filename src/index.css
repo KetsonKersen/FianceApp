@@ -6,9 +6,8 @@
   list-style: none;
   text-decoration: none;
   scrollbar-width: 8px;
-  scrollbar-color: red;
-
 }
+
 .light-mode{
   --Card: #ffffff;
   --Line: #ececec;

@@ -14,17 +14,8 @@
     
     <title>React App</title>
   </head>
-  <body>
+  <body class="light-mode">
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
   </body>
-  <script>
-    const theme = localStorage.getItem("@theme-mode")
-    if(theme === "light"){
-      document.querySelector("body").classList.add("light-mode")
-    }
-    if(theme === "dark"){
-      document.querySelector("body").classList.add("dark-mode")
-    }
-  </script>
 </html>

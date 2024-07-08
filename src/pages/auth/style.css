@@ -8,7 +8,7 @@ main.auth{
     justify-content: space-between;
     padding: 0 0;
     gap: 0;
-    background-color: var(--Color);
+    background-color: #472cb7;
 }
 .container-img{
     width: 60%;

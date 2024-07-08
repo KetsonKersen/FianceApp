@@ -26,8 +26,17 @@ export default function Router(){
             }
         })
     },[])
-    
 
+    useEffect(()=>{
+        const theme = localStorage.getItem("@theme-mode")
+        if(theme === "light" || null){
+          document.querySelector("body").classList.add("light-mode")
+        }
+        if(theme === "dark"){
+          document.querySelector("body").classList.add("dark-mode")
+        }
+        
+    },[])
 
     return(  
         <Routes>

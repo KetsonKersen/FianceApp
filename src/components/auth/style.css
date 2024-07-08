@@ -13,7 +13,10 @@
 }
 .auth form input{
     background-color: #f1f1f1;
-
+    color: #747474;
+}
+.auth form input::placeholder{
+    color: #aaaaaa;
 }
 .auth form p{
     font-size: 2rem;
@@ -37,6 +40,10 @@
     font-weight: 400;
     color: #472cb7;
     cursor: pointer;
+}
+.auth form > button:first-of-type{
+    background-color: #472cb7;
+    color: white;
 }
 .auth form .createAccount{
     font-size: 2.4rem;
