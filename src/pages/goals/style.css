@@ -1,0 +1,45 @@
+
+.current-goal{
+    height: 14rem;
+}
+.latest-goals{
+    height: 48dvh;
+    overflow-y: auto;
+}
+.latest-goals .bar span{
+    display: none;
+}
+.content-latestGoals{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--Line);
+}
+.content-latestGoals:last-of-type{
+    border-bottom: none;
+}
+.content-latestGoals .goal{
+    padding-right: 2rem;
+}
+.container-btn-latestGoals{
+    width: 6rem;
+    height: 12rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-left:  1px solid var(--Line);
+    padding-left: 1rem;
+}
+.container-btn-latestGoals button{
+    width: 3.6rem;
+    height: 3.6rem;
+    background-color: var(--Red);
+    color: var(--White);
+    border-radius: .6rem;
+}
+.title{
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--Color);
+}

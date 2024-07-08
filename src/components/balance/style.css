@@ -1,0 +1,30 @@
+    
+.math-balance{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    gap: 1rem;
+    font-size: 1.6rem;
+}
+.math-balance p{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.math-balance p span{
+    font-weight: 600;
+    color: var(--Text2);
+}
+.math-balance p:nth-child(3){
+    border-top: 1px solid var(--Line);
+    padding-top: 1rem;
+}
+.math-balance p:nth-child(1) span:last-of-type{
+    color: var(--Green);
+}
+.math-balance p:nth-child(2) span:last-of-type{
+    color: var(--Red);
+}
+.math-balance p:nth-child(3) span:last-of-type{
+    color: var(--Color);
+}

@@ -1,0 +1,30 @@
+.default-btn{
+    color: var(--White);
+    font-size: 1.6rem;
+    font-weight: 600;
+    border-radius: .6rem;
+    margin: 0 auto;
+}
+.small{
+    width: 12rem;
+    height: 4rem;
+}
+.medium{
+    width: 15rem;
+    height: 4.5rem;
+}
+.large{
+    width: 100%;
+    height: 4.5rem;
+    margin: 0;
+}
+.active{
+    background-color: var(--Color);
+}
+.delete{
+    background-color: var(--Red);
+}
+.disabled{
+    background-color: var(--Text2);
+    cursor: not-allowed;
+}

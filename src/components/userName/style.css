@@ -1,0 +1,24 @@
+.container-name{
+    min-width: 15rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background-color: var(--Card);
+    padding: 0.5rem 1rem;
+    border-radius: 4rem;
+    font-weight: 600;
+    color: var(--Text2);
+    cursor: pointer;
+  }
+  .container-name span{
+    width: 3.6rem;
+    height: 3.6rem;
+    border-radius: 3.6rem;
+    color: var(--White);
+    font-size: 2rem;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--Color);
+  }

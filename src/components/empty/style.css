@@ -1,0 +1,19 @@
+div.empty{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+div.empty > img{
+    height: 18rem;
+}
+div.empty > p{
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: var(--Text1);
+    padding-bottom: 5rem;
+}

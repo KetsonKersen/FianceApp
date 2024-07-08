@@ -1,0 +1,352 @@
+nav{
+    width: 8rem;
+    height: 100vh;
+    background-color: var(--Color2);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 5rem 0;
+    transition: .2s;
+}
+nav.active{
+    width: 25rem;
+    background-color: var(--Color2);
+}
+nav > div:first-of-type > button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    font-size: 1.8rem;
+}
+nav > div > button > span{
+    display: none;
+}
+nav.active > div > button > span{
+    display: block;
+}
+nav button{
+    width: 100%;
+    color: var(--Text);
+}
+nav div{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+nav > div > .button-add-nav{
+    width: 7rem;
+    height: 7rem;
+    background-color: var(--Background);
+    border-radius: 4.5rem 0 0 4.5rem;
+    margin-left: 1rem;
+    position: relative;
+    transition: .4s;
+}
+nav.active > div > .button-add-nav{
+    width: calc(100% - 1rem);
+    transition: .0s;
+}
+nav > div > .button-add-nav::after, nav >  div > .button-add-nav::before{
+    content: '';
+    width: 1.3rem;
+    height: 1.3rem;
+    position: absolute;
+    right: -1.3rem;
+    border-right: 1.3rem solid var(--Background);
+}
+nav > div > .button-add-nav::after{
+    top: -1.3rem;
+    border-bottom-right-radius: 100%;
+    border-bottom: 1.3rem solid var(--Background);
+}
+nav > div > .button-add-nav::before{
+    bottom: -1.3rem;
+    border-top-right-radius: 100%;
+    border-top: 1.3rem solid var(--Background);
+}
+nav > div > .button-add-nav > button{
+    width: 5.5rem;
+    height: 5.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--Color);
+    color: var(--White);
+    border-radius: 6rem;
+    position: absolute;
+    top: 50%;
+    left: 1rem;
+    transform: translate(0 , -50%);
+    transition: .2s;
+    z-index: 1;
+}
+nav.active div .button-add-nav button{
+    width: calc(100% - 1.3rem);
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    font-size: 1.8rem;
+}
+nav div .button-add-nav button span{
+    display: none;
+}
+nav.active div .button-add-nav button span{
+    display: block;
+}
+nav > div > ul{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    padding: 0 1rem;
+}
+nav > div > ul li{
+    width: 100%;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+nav > div > ul li.current{
+    background-color: rgba(121, 121, 121, 0.1);
+}
+
+nav > div > ul li a{
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    color: var(--Text);
+}
+nav.active > div > ul li a{
+    justify-content: left;
+}
+nav > div > ul li a span{
+    display: none;
+}
+nav.active > div > ul li a span{
+    animation: teste .2s linear;
+    display: block;
+}
+@keyframes teste {
+    0%{
+        display: none;
+    }
+    90%{
+        display: none;
+    }
+    100%{
+        display: block;
+    }
+}
+nav > div:last-of-type{
+    width: 100%;
+    border-radius: 0;
+}
+nav > div:last-of-type button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    font-size: 1.8rem;
+    padding: 1rem 1.5rem;
+    border-radius: 1rem;
+}
+nav.active > div:last-of-type > button{
+    justify-content: left;
+}
+nav > div:last-of-type > button:hover{
+    background-color: rgba(0, 0, 0, 0.12);
+}
+nav .exit span{
+    display: none;
+}
+nav.active .exit span{
+    display: block;
+}
+
+.container-setNewItem{
+    width: 14rem;
+    height: 14rem;
+    position: absolute;
+    top: 50%;
+    right: -100%;
+    transform: translate( 2.5rem , -50%);
+    position: relative;
+    z-index: 999;
+}
+.container-setNewItem::before{
+    content: '';
+    width: 2rem;
+    height: 2rem;
+    background-color: var(--Card);
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(-50% , -50%) rotate(45deg);
+}
+.container-setNewItem > ul{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    color: var(--Text2);
+    padding: 0;
+}
+.container-setNewItem > ul > li{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 0;
+    border-bottom: 1px solid var(--Line);
+    cursor: pointer;
+    transition: .2s linear;
+    position: relative;
+    z-index: 999;
+}
+.container-setNewItem > ul > li:hover{
+    font-weight: 600;
+}
+.container-setNewItem > ul > li:hover::before{
+    transform: scale(130%);
+}
+.container-setNewItem > ul > li:last-of-type{
+    border: none;
+}
+.container-setNewItem > ul > li::before{
+    content: '';
+    width: 1.2rem;
+    height: 1.2rem;
+    border-radius: 1.2rem;
+    transition: .2s linear;
+    z-index: 999;
+}
+.container-setNewItem > ul > li:nth-child(1):before{
+    background-color: var(--Green);
+}
+.container-setNewItem > ul > li:nth-child(2):before{
+    background-color: var(--Red);
+}
+.container-setNewItem > ul > li:nth-child(3):before{
+    background-color: var(--Color);
+}
+
+.bg-modal{
+    width: 100dvw;
+    height: 100dvh;
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.bg-modal > .container{
+    width: fit-content;
+    height: fit-content;
+    position: relative;
+}
+.bg-modal > .container button.close{
+    width: 3rem;
+    height: 3rem;
+    border-radius: .6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--White);
+    background-color: var(--Red);
+    position: absolute;
+    top: -1.5rem;
+    right: -1.5rem;
+}
+
+@media screen and (max-width: 1100px){
+    nav{
+        width: 100%;
+        height: 8rem;
+        position: relative;
+        border-top: 1rem solid var(--Background);
+        padding: 1rem;
+    }
+    nav > div:first-of-type > button{
+        display: none;
+    }
+    nav > div > .button-add-nav{
+        width: 7rem;
+        height: 6rem;
+        margin-left: 0;
+        border-radius: 0 0 4.5rem 4.5rem;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translate(-50% , 0);
+        z-index: 9999;
+    }
+    nav > div > .button-add-nav::after, nav >  div > .button-add-nav::before{
+        width: 1rem;
+        height: 1rem;
+        top: -1rem;
+        border-bottom: none;
+        border-top: 1rem solid var(--Background);
+    }
+    nav > div > .button-add-nav::before{
+        border-left: none;
+        left: -1rem;
+        border-top-right-radius: 100%;
+        border-right: 1rem solid var(--Background);
+    } 
+    nav > div > .button-add-nav::after{
+        border-right: none;
+        right: -1rem;
+        border-top-left-radius: 100%;
+        border-left: 1rem solid var(--Background);
+    }
+    nav > div > .button-add-nav > button{
+        width: 5.5rem;
+        height: 5.5rem;
+        border-radius: 5.5rem;
+        top: calc(50% - .5rem);
+        left: 50%;
+        transform: translate(-50% , -50%);
+        transition: .2s;
+    }
+
+
+    nav > div > ul{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 1rem;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50% , 0);
+        gap: 1rem;
+    }
+    nav > div > ul li:nth-child(2){
+        margin-right: 26%;
+    }
+
+    .container-setNewItem{
+        width: 14rem;
+        height: 14rem;
+        position: absolute;
+        top: -2rem;
+        left: 50%;
+        z-index: 9999;
+        transform: translate(-50% , -100%);
+    }
+
+    .container-setNewItem::before{
+        position: absolute;
+        left: 50%;
+        top: 100%;
+        transform: translate(-50% , -50%) rotate(45deg);
+    }
+}
