@@ -4,7 +4,7 @@
 
 ## 📜 Descrição
 
-Este é um aplicativo de controle financeiro desenvolvido em React.js, utilizando o Firebase como Backend as a Service (BaaS). O aplicativo permite aos usuários gerenciar suas finanças pessoais de forma eficiente e intuitiva.
+Este é um site de controle financeiro desenvolvido em React.js, utilizando o Firebase como Backend as a Service (BaaS). O aplicativo permite aos usuários gerenciar suas finanças pessoais de forma eficiente e intuitiva.
 
 ## 🌌 Funcionalidades
 - Gráficos: Visualize seus gastos e ganhos divididos por categorias através de gráficos.
