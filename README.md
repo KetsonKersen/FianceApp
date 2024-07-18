@@ -17,6 +17,7 @@ Este é um site de controle financeiro desenvolvido em React.js, utilizando o Fi
 - Frontend: React.js
 - Backend: Firebase (BaaS)
 - Estilo: CSS
+- Icones: react-icons
 - Gráficos: Apexcharts
 - Deploy: Vercel
   
